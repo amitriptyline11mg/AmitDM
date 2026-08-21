@@ -1,4 +1,4 @@
-# Digital Marketing Setup Guide
+﻿# Digital Marketing Setup Guide
 **For Amit Rawat — Your Complete Beginner Reference**
 
 This file explains everything you need to know to use, update, and grow this website.
@@ -86,7 +86,7 @@ Also update `Amit<span class="nav__logo-dot">.</span>Rawat` in each page's nav.
 Search for and replace these placeholders:
 - `[YOUR NAME]` → your full name
 - `[YOUR EMAIL]` → e.g. hello@yoursite.com
-- `[YOUR-DOMAIN]` → e.g. amitrawat.com (no https://, no trailing slash)
+- `amit-digital-marketing.netlify.app` → e.g. amitrawat.com (no https://, no trailing slash)
 - `[YOUR-LINKEDIN]` → your LinkedIn username (the part after linkedin.com/in/)
 - `[YOUR CITY]` → your location
 - `[YOUR-TWITTER]` → your Twitter/X handle (without @)
@@ -211,7 +211,7 @@ Don't use headings for visual styling. Use them for structure. Don't skip levels
 ```
 
 This tells Google: "this is the official URL of this page". It prevents duplicate content issues.
-Once your site is live, replace `[YOUR-DOMAIN]` with your real domain in all pages.
+Once your site is live, replace `amit-digital-marketing.netlify.app` with your real domain in all pages.
 
 ### Internal Linking
 
@@ -500,7 +500,7 @@ git push -u origin main
 ### Updating your domain references after deployment
 
 Once you have a real domain (e.g. amitrawat.com):
-1. Use Find & Replace across all files: replace `[YOUR-DOMAIN]` with `amitrawat.com`
+1. Use Find & Replace across all files: replace `amit-digital-marketing.netlify.app` with `amitrawat.com`
 2. Also update sitemap.xml and robots.txt
 3. Redeploy the site
 
@@ -533,7 +533,7 @@ Once you have a real domain (e.g. amitrawat.com):
 ### What to replace before launching
 
 Search the project for these and replace them all:
-- `[YOUR-DOMAIN]` → your real domain
+- `amit-digital-marketing.netlify.app` → your real domain
 - `[YOUR NAME]` → your name
 - `[YOUR EMAIL]` → your email
 - `[YOUR-LINKEDIN]` → your LinkedIn username
