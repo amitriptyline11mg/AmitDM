@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEO for Beginners: How Search Engines Actually Work | Amit Rawat</title>
+  <meta name="description" content="Before you can do SEO, you need to understand what search engines are actually doing. Crawling, indexing, ranking — here's the clear explanation most beginner guides skip.">
+  <link rel="canonical" href="https://[YOUR-DOMAIN]/blog/seo-for-beginners.html">
+
+  <meta property="og:title" content="SEO for Beginners: How Search Engines Actually Work">
+  <meta property="og:description" content="Crawling, indexing, ranking — here's the clear explanation of how search engines work that most beginner guides skip.">
+  <meta property="og:url" content="https://[YOUR-DOMAIN]/blog/seo-for-beginners.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://[YOUR-DOMAIN]/images/og-seo.jpg">
+  <meta property="article:published_time" content="2026-08-05">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SEO for Beginners: How Search Engines Actually Work">
+  <meta name="twitter:description" content="Crawling, indexing, ranking — the clear explanation most SEO guides skip.">
+
+  <!-- GTM HEAD SNIPPET -->
+  <!--
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "SEO for Beginners: How Search Engines Actually Work",
+    "description": "Crawling, indexing, ranking — the clear explanation of how search engines work that most SEO guides skip.",
+    "datePublished": "2026-08-05",
+    "dateModified": "2026-08-05",
+    "author": { "@type": "Person", "name": "Amit Rawat", "url": "https://[YOUR-DOMAIN]/about.html" },
+    "publisher": { "@type": "Person", "name": "Amit Rawat" },
+    "url": "https://[YOUR-DOMAIN]/blog/seo-for-beginners.html",
+    "keywords": ["SEO", "Search Engine Optimisation", "Google", "Beginners Guide", "Digital Marketing"]
+  }
+  </script>
+</head>
+<body>
+
+  <!--
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  -->
+
+  <div class="reading-progress" role="progressbar" aria-label="Reading progress" aria-valuemin="0" aria-valuemax="100"></div>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo" aria-label="Amit Rawat — Home">Amit<span class="nav__logo-dot">.</span>Rawat</a>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" role="list">
+        <li><a href="../index.html" class="nav__link">Home</a></li>
+        <li><a href="../about.html" class="nav__link">About</a></li>
+        <li><a href="../digital-marketing.html" class="nav__link">Digital Marketing</a></li>
+        <li><a href="../blog.html" class="nav__link">Blog</a></li>
+        <li><a href="../contact.html" class="nav__link nav__link--cta">Get in Touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <header class="post-header">
+      <div class="container container--blog">
+        <div class="post-header__inner">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <span class="breadcrumb__sep" aria-hidden="true">/</span>
+            <a href="../blog.html">Blog</a>
+            <span class="breadcrumb__sep" aria-hidden="true">/</span>
+            <span aria-current="page">SEO for Beginners</span>
+          </nav>
+          <span class="post-header__category">SEO</span>
+          <h1 class="post-header__title">SEO for Beginners: How Search Engines Actually Work</h1>
+          <div class="post-header__meta">
+            <span>By <a href="../about.html" style="color: inherit;">Amit Rawat</a></span>
+            <span>·</span>
+            <time datetime="2026-08-05">5 August 2026</time>
+            <span>·</span>
+            <span data-reading-time>8 min read</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="post-body">
+      <div class="container container--blog">
+        <article class="post-content">
+
+          <p>
+            Most SEO beginner guides start with tips: "use your keyword in the first paragraph", "write
+            longer content", "get backlinks". The tips aren't wrong — but without understanding <em>why</em>
+            they matter, you're just following rules without knowing what they're actually doing.
+          </p>
+
+          <p>
+            This article starts one step earlier. We'll look at what search engines are actually trying to
+            accomplish, and how they do it. Once you understand this, the rest of SEO starts to make sense.
+          </p>
+
+          <h2>What Is a Search Engine Trying to Do?</h2>
+
+          <p>
+            It sounds obvious, but it's worth stating: a search engine's goal is to give users the most
+            useful, relevant, trustworthy result for their query — as quickly as possible.
+          </p>
+
+          <p>
+            That's it. Everything Google does — every algorithm update, every quality guideline — is
+            oriented around serving the user. When you understand this, you can see why most short-term
+            SEO manipulation eventually fails: if it doesn't serve the user, it doesn't serve Google.
+          </p>
+
+          <p>
+            Good SEO aligns your interests with Google's. You want to be found; Google wants to show
+            the best result. Make your content genuinely the best result for a query, and you're doing SEO.
+          </p>
+
+          <h2>How Search Engines Work: The Three Stages</h2>
+
+          <p>
+            Before a search engine can rank your page, it needs to know your page exists. This happens
+            in three stages: <strong>crawling, indexing, and ranking</strong>.
+          </p>
+
+          <h3>Stage 1: Crawling</h3>
+
+          <p>
+            Search engines use automated programs called <strong>crawlers</strong> (or "spiders" or "bots")
+            to explore the web. Google's primary crawler is called Googlebot.
+          </p>
+
+          <p>
+            Crawlers work by following links. They start from a known list of URLs, visit each page,
+            read its content, and then follow any links on that page to discover more pages. This is
+            how the web gets mapped — link by link.
+          </p>
+
+          <p>
+            This is why <a href="../digital-marketing.html#seo">internal linking</a> matters. If you publish
+            a new blog post but don't link to it from anywhere else on your site, crawlers may never find it.
+            Every page should be reachable from at least one other page via a link.
+          </p>
+
+          <div class="callout">
+            <strong>💡 What this means for you:</strong>
+            <p style="margin-bottom: 0;">
+              Make sure your website's sitemap.xml is submitted to Google Search Console (it tells Google
+              about all your pages). And link between your pages — a blog post should link to related
+              posts and to relevant pages on your site.
+            </p>
+          </div>
+
+          <h3>Stage 2: Indexing</h3>
+
+          <p>
+            After crawling a page, Google analyses its content and decides whether to add it to its
+            <strong>index</strong> — a giant database of web pages.
+          </p>
+
+          <p>
+            Google looks at:
+          </p>
+
+          <ul>
+            <li>The text content of the page</li>
+            <li>The page's title and headings</li>
+            <li>The images and their alt text</li>
+            <li>The page's URL structure</li>
+            <li>How the page is structured (semantic HTML)</li>
+            <li>Whether the content is duplicate or unique</li>
+            <li>The quality and trustworthiness of the content</li>
+          </ul>
+
+          <p>
+            Not all pages get indexed. Google may skip pages that are very thin (too little content),
+            duplicate, low quality, blocked by robots.txt, or technically broken.
+          </p>
+
+          <h3>Stage 3: Ranking</h3>
+
+          <p>
+            When a user types a query, Google searches its index for relevant pages and ranks them
+            in order of usefulness. This is where the real complexity lives — Google uses hundreds
+            of signals to determine ranking order.
+          </p>
+
+          <p>
+            Key ranking factors broadly fall into three categories:
+          </p>
+
+          <ul>
+            <li><strong>Relevance</strong> — does the page's content match what the user is looking for?</li>
+            <li><strong>Authority</strong> — is this page (and this website) trustworthy and well-regarded?</li>
+            <li><strong>Quality</strong> — is the content well-written, accurate, useful, and complete?</li>
+          </ul>
+
+          <h2>On-Page SEO: What You Control Directly</h2>
+
+          <p>
+            On-page SEO refers to things you can change on your own pages to help Google understand
+            and rank them. These are the most actionable things for beginners.
+          </p>
+
+          <h3>Title Tags</h3>
+          <p>
+            The <code>&lt;title&gt;</code> element in your page's HTML is what appears as the blue
+            headline in Google search results. It's one of the strongest signals Google uses to understand
+            what a page is about. Keep it under 60 characters, include your target keyword naturally,
+            and make it relevant and enticing.
+          </p>
+
+          <h3>Meta Descriptions</h3>
+          <p>
+            The meta description is the grey text under the title in search results. It doesn't directly
+            affect ranking, but it affects click-through rate — which is how many people choose your result.
+            Write it like an advert: clear, compelling, under 160 characters.
+          </p>
+
+          <h3>Heading Hierarchy (H1, H2, H3)</h3>
+          <p>
+            Headings help both users and search engines understand your content structure. Every page
+            should have exactly one <code>&lt;h1&gt;</code> (the main title), then <code>&lt;h2&gt;</code>
+            for major sections, and <code>&lt;h3&gt;</code> for sub-sections. Don't use headings for
+            styling — use them for structure.
+          </p>
+
+          <h3>Image Alt Text</h3>
+          <p>
+            Every image should have an <code>alt</code> attribute that describes what the image shows.
+            This helps search engines understand your images (they can't "see" them the way humans do)
+            and is also important for accessibility for users with screen readers.
+          </p>
+
+          <h3>URL Structure</h3>
+          <p>
+            Use clear, descriptive URLs. <code>/blog/seo-for-beginners</code> is far better than
+            <code>/blog/?p=2847</code>. Short, descriptive, hyphen-separated URLs help both users
+            and search engines understand what a page is about.
+          </p>
+
+          <h3>Content Quality</h3>
+          <p>
+            Google's ranking algorithms have become very good at identifying genuinely useful content
+            versus content that just uses keywords. Write for humans first. Cover a topic thoroughly.
+            Be accurate. Be original. Answer the question the user is actually asking.
+          </p>
+
+          <h2>Off-Page SEO: Signals From Other Sites</h2>
+
+          <p>
+            Off-page SEO refers to signals that come from outside your website — primarily backlinks.
+          </p>
+
+          <p>
+            A <strong>backlink</strong> is a link from another website to yours. Google treats backlinks
+            as votes of confidence. If a reputable, relevant website links to your content, that's a
+            signal that your content is valuable.
+          </p>
+
+          <p>
+            The quality of backlinks matters much more than quantity. One link from a well-respected
+            industry website is worth far more than hundreds of links from low-quality directories.
+          </p>
+
+          <p>
+            Building backlinks is one of the harder parts of SEO. The most sustainable approach:
+            create content so useful and original that people want to link to it naturally.
+          </p>
+
+          <h2>Technical SEO: The Foundations</h2>
+
+          <p>
+            Technical SEO ensures that search engines can properly crawl, index, and render your website.
+            Key basics:
+          </p>
+
+          <ul>
+            <li><strong>HTTPS</strong> — your site should be served over HTTPS (secure). Google uses this as a ranking signal.</li>
+            <li><strong>Mobile-friendly</strong> — Google primarily uses the mobile version of your site for indexing.</li>
+            <li><strong>Page speed</strong> — slow pages rank lower. Google measures Core Web Vitals (loading, interactivity, visual stability).</li>
+            <li><strong>Sitemap.xml</strong> — a file that lists all your pages, submitted to Google Search Console.</li>
+            <li><strong>Robots.txt</strong> — a file that tells crawlers which pages to visit and which to skip.</li>
+            <li><strong>Canonical URLs</strong> — tells Google which version of a page is the "official" one, preventing duplicate content issues.</li>
+          </ul>
+
+          <h2>How to Submit Your Site to Google</h2>
+
+          <p>
+            Google doesn't automatically know your website exists. To get it found:
+          </p>
+
+          <ol>
+            <li>Create a free account at <strong>Google Search Console</strong> (search.google.com/search-console)</li>
+            <li>Add your website and verify that you own it</li>
+            <li>Submit your sitemap.xml</li>
+            <li>Request indexing for important pages using the URL Inspection tool</li>
+          </ol>
+
+          <p>
+            Search Console also shows you which queries people use to find your site, which pages are
+            being indexed, and any technical issues Google has found. It's an essential tool for
+            anyone practising SEO.
+          </p>
+
+          <h2>Key Takeaways</h2>
+
+          <ul>
+            <li>Search engines want to show users the most useful, relevant, trustworthy result — align with this and you're doing SEO</li>
+            <li>The three stages: crawling (finding pages), indexing (storing pages), ranking (ordering results)</li>
+            <li>On-page SEO covers your title, meta description, headings, content, images, and URL structure</li>
+            <li>Off-page SEO is primarily about earning backlinks from reputable sites</li>
+            <li>Technical SEO ensures search engines can access, understand, and render your site</li>
+            <li>Submit your site to Google Search Console and your sitemap.xml to get indexed</li>
+          </ul>
+
+          <div class="callout">
+            <strong>📖 Next steps:</strong>
+            <p style="margin-bottom: 0;">
+              Read <a href="what-is-google-tag-manager.html">What Is Google Tag Manager?</a> to understand
+              how to implement tracking on your site. And check out
+              <a href="../digital-marketing.html#seo">the SEO section on the Digital Marketing page</a>
+              for more resources.
+            </p>
+          </div>
+
+          <div class="post-share">
+            <p class="post-share__title">Found this useful? Share it:</p>
+            <div class="post-share__links">
+              <a href="https://twitter.com/intent/tweet?text=SEO+for+Beginners%3A+How+Search+Engines+Actually+Work&url=https://[YOUR-DOMAIN]/blog/seo-for-beginners.html" class="post-share__link" target="_blank" rel="noopener noreferrer">Share on 𝕏</a>
+              <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://[YOUR-DOMAIN]/blog/seo-for-beginners.html" class="post-share__link" target="_blank" rel="noopener noreferrer">Share on LinkedIn</a>
+            </div>
+          </div>
+
+        </article>
+      </div>
+    </div>
+
+    <section class="related-posts" aria-labelledby="related-heading">
+      <div class="container">
+        <h2 class="related-posts__title" id="related-heading">Related Articles</h2>
+        <div class="blog-cards">
+          <article class="blog-card">
+            <div class="blog-card__image" role="img" aria-label="GTM">🏷️</div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta"><span class="blog-card__category">Analytics</span><time class="blog-card__date" datetime="2026-07-28">28 Jul 2026</time></div>
+              <h3 class="blog-card__title"><a href="what-is-google-tag-manager.html">What Is Google Tag Manager and Why Does It Matter?</a></h3>
+              <p class="blog-card__excerpt">GTM lets marketers add tracking without touching code. Here's how it works.</p>
+              <div class="blog-card__footer"><span>7 min read</span><a href="what-is-google-tag-manager.html" class="blog-card__read-more">Read →</a></div>
+            </div>
+          </article>
+          <article class="blog-card">
+            <div class="blog-card__image" role="img" aria-label="Conversions">🎯</div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta"><span class="blog-card__category">CRO</span><time class="blog-card__date" datetime="2026-08-19">19 Aug 2026</time></div>
+              <h3 class="blog-card__title"><a href="how-to-measure-conversions.html">How to Measure Whether a Website Is Actually Converting</a></h3>
+              <p class="blog-card__excerpt">Most websites can't tell if their traffic is working. Here's how to measure it.</p>
+              <div class="blog-card__footer"><span>7 min read</span><a href="how-to-measure-conversions.html" class="blog-card__read-more">Read →</a></div>
+            </div>
+          </article>
+          <article class="blog-card">
+            <div class="blog-card__image" role="img" aria-label="Learning journey">🚀</div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta"><span class="blog-card__category">Personal</span><time class="blog-card__date" datetime="2026-08-21">21 Aug 2026</time></div>
+              <h3 class="blog-card__title"><a href="my-digital-marketing-journey.html">My Digital Marketing Learning Journey</a></h3>
+              <p class="blog-card__excerpt">An honest account of learning digital marketing from scratch.</p>
+              <div class="blog-card__footer"><span>5 min read</span><a href="my-digital-marketing-journey.html" class="blog-card__read-more">Read →</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="../index.html" class="footer__logo">Amit<span class="footer__logo-dot">.</span>Rawat</a>
+          <p class="footer__tagline">Learning digital marketing in public — one article at a time.</p>
+          <div class="footer__social">
+            <a href="https://linkedin.com/in/[YOUR-LINKEDIN]" class="footer__social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">in</a>
+            <a href="https://twitter.com/[YOUR-TWITTER]" class="footer__social-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">𝕏</a>
+          </div>
+        </div>
+        <div><h3 class="footer__col-title">Pages</h3><ul class="footer__links" role="list"><li><a href="../index.html" class="footer__link">Home</a></li><li><a href="../about.html" class="footer__link">About</a></li><li><a href="../digital-marketing.html" class="footer__link">Digital Marketing</a></li><li><a href="../blog.html" class="footer__link">Blog</a></li><li><a href="../contact.html" class="footer__link">Contact</a></li></ul></div>
+        <div><h3 class="footer__col-title">Articles</h3><ul class="footer__links" role="list"><li><a href="what-is-google-tag-manager.html" class="footer__link">What Is GTM?</a></li><li><a href="seo-for-beginners.html" class="footer__link">SEO for Beginners</a></li><li><a href="google-analytics-vs-google-tag-manager.html" class="footer__link">GA4 vs GTM</a></li><li><a href="how-to-measure-conversions.html" class="footer__link">Measuring Conversions</a></li><li><a href="my-digital-marketing-journey.html" class="footer__link">My Journey</a></li></ul></div>
+        <div><h3 class="footer__col-title">Topics</h3><ul class="footer__links" role="list"><li><a href="../digital-marketing.html#seo" class="footer__link">SEO</a></li><li><a href="../digital-marketing.html#analytics" class="footer__link">Analytics</a></li><li><a href="../digital-marketing.html#cro" class="footer__link">CRO</a></li></ul></div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Amit Rawat. Built to learn digital marketing.</span>
+        <span>Made with HTML, CSS &amp; JavaScript</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+# robots.txt
+# ==========
+# This file tells search engine crawlers what they can and can't access.
+# "User-agent: *" means: these rules apply to all crawlers (Google, Bing, etc.)
+# "Allow: /" means: crawlers can access everything on the site
+# "Sitemap:" tells crawlers where to find your sitemap
+#
+# HOW TO USE:
+# Replace [YOUR-DOMAIN] with your real domain once the site is live.
+# Then submit your sitemap.xml to Google Search Console separately.
+
+User-agent: *
+Allow: /
+
+# Sitemap location — replace [YOUR-DOMAIN] with your real domain
+Sitemap: https://[YOUR-DOMAIN]/sitemap.xml

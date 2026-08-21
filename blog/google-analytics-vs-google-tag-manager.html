@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Analytics vs Google Tag Manager: What's the Difference? | Amit Rawat</title>
+  <meta name="description" content="Google Analytics and Google Tag Manager are constantly confused. One measures your data; the other deploys it. Here's the clear explanation every marketer needs.">
+  <link rel="canonical" href="https://[YOUR-DOMAIN]/blog/google-analytics-vs-google-tag-manager.html">
+
+  <meta property="og:title" content="Google Analytics vs Google Tag Manager: What's the Difference?">
+  <meta property="og:description" content="One measures. The other deploys. Here's the clear explanation every marketer needs.">
+  <meta property="og:url" content="https://[YOUR-DOMAIN]/blog/google-analytics-vs-google-tag-manager.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://[YOUR-DOMAIN]/images/og-ga-gtm.jpg">
+  <meta property="article:published_time" content="2026-08-12">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Google Analytics vs Google Tag Manager: What's the Difference?">
+  <meta name="twitter:description" content="One measures. The other deploys. Here's the clear explanation.">
+
+  <!-- GTM HEAD SNIPPET -->
+  <!--
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Google Analytics vs Google Tag Manager: What's the Difference?",
+    "description": "Google Analytics and Google Tag Manager are constantly confused. One measures; the other deploys.",
+    "datePublished": "2026-08-12",
+    "dateModified": "2026-08-12",
+    "author": { "@type": "Person", "name": "Amit Rawat", "url": "https://[YOUR-DOMAIN]/about.html" },
+    "publisher": { "@type": "Person", "name": "Amit Rawat" },
+    "url": "https://[YOUR-DOMAIN]/blog/google-analytics-vs-google-tag-manager.html",
+    "keywords": ["Google Analytics", "Google Tag Manager", "GA4", "GTM", "Digital Marketing"]
+  }
+  </script>
+</head>
+<body>
+
+  <!--
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  -->
+
+  <div class="reading-progress" role="progressbar" aria-label="Reading progress" aria-valuemin="0" aria-valuemax="100"></div>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo" aria-label="Amit Rawat — Home">Amit<span class="nav__logo-dot">.</span>Rawat</a>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <ul class="nav__links" role="list">
+        <li><a href="../index.html" class="nav__link">Home</a></li>
+        <li><a href="../about.html" class="nav__link">About</a></li>
+        <li><a href="../digital-marketing.html" class="nav__link">Digital Marketing</a></li>
+        <li><a href="../blog.html" class="nav__link">Blog</a></li>
+        <li><a href="../contact.html" class="nav__link nav__link--cta">Get in Touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <header class="post-header">
+      <div class="container container--blog">
+        <div class="post-header__inner">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <span class="breadcrumb__sep" aria-hidden="true">/</span>
+            <a href="../blog.html">Blog</a>
+            <span class="breadcrumb__sep" aria-hidden="true">/</span>
+            <span aria-current="page">GA4 vs GTM</span>
+          </nav>
+          <span class="post-header__category">Analytics &amp; Tracking</span>
+          <h1 class="post-header__title">Google Analytics vs Google Tag Manager: What's the Difference?</h1>
+          <div class="post-header__meta">
+            <span>By <a href="../about.html" style="color: inherit;">Amit Rawat</a></span>
+            <span>·</span>
+            <time datetime="2026-08-12">12 August 2026</time>
+            <span>·</span>
+            <span data-reading-time>6 min read</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="post-body">
+      <div class="container container--blog">
+        <article class="post-content">
+
+          <p>
+            Ask a room of marketers to explain the difference between Google Analytics and Google Tag Manager
+            and you'll get a lot of vague answers — or confident ones that turn out to be wrong.
+          </p>
+
+          <p>
+            These two tools are genuinely confusing when you first encounter them, partly because they're
+            both from Google, both deal with tracking, and both show up in the same conversations about
+            "measurement" and "data". But they do completely different things.
+          </p>
+
+          <p>
+            Here's the clear version.
+          </p>
+
+          <h2>The One-Sentence Version</h2>
+
+          <blockquote>
+            <p><strong>Google Analytics</strong> is where your data lives. <strong>Google Tag Manager</strong> is how you get the data there.</p>
+          </blockquote>
+
+          <p>
+            If that's already making sense, great. If not, let's go deeper.
+          </p>
+
+          <h2>What Is Google Analytics 4 (GA4)?</h2>
+
+          <p>
+            Google Analytics is a <strong>measurement tool</strong>. Its job is to collect data about
+            what people do on your website and present it in reports you can read and act on.
+          </p>
+
+          <p>
+            When you log into GA4, you see things like:
+          </p>
+
+          <ul>
+            <li>How many people visited your site this week</li>
+            <li>Which pages they looked at and for how long</li>
+            <li>Where they came from (Google search, direct, social media, etc.)</li>
+            <li>What percentage of visitors completed a goal (like filling a form)</li>
+            <li>Which devices and countries they were on</li>
+          </ul>
+
+          <p>
+            All of this is data that GA4 has collected and organised into reports. GA4 is the destination
+            — it's where the data ends up, and where you go to read it.
+          </p>
+
+          <h2>What Is Google Tag Manager (GTM)?</h2>
+
+          <p>
+            Google Tag Manager is a <strong>deployment tool</strong>. Its job is to put things (tracking
+            scripts, pixels, code snippets) onto your website — and control when and how they fire.
+          </p>
+
+          <p>
+            When you use GTM, you set up:
+          </p>
+
+          <ul>
+            <li>Which tracking tools should be on your site (GA4, Meta Pixel, etc.)</li>
+            <li>What events should be tracked (button clicks, form submissions, scroll depth)</li>
+            <li>When those events fire (when someone clicks the "Get Started" button, when a page loads)</li>
+          </ul>
+
+          <p>
+            GTM is the vehicle. It doesn't store data or show you reports. It just sends data to the
+            right place — including Google Analytics.
+          </p>
+
+          <h2>The Analogy: Camera vs Tripod</h2>
+
+          <p>
+            If GA4 is a camera (it captures and stores the photos), then GTM is a tripod (it positions
+            the camera correctly, holds it steady, and controls when the shutter fires).
+          </p>
+
+          <p>
+            You could use a camera without a tripod — it works, but it's less stable and harder to control.
+            You could have a tripod without a camera — but nothing actually gets captured. Together,
+            they work properly.
+          </p>
+
+          <h2>How They Work Together</h2>
+
+          <p>
+            Here's the typical setup flow for someone installing GA4 on their website using GTM:
+          </p>
+
+          <ol>
+            <li><strong>Install GTM</strong> on your website — two snippets of code, usually done once by a developer</li>
+            <li><strong>Inside GTM</strong>, create a GA4 Configuration tag — this tells GTM to load GA4</li>
+            <li><strong>Set the Measurement ID</strong> in the tag (you get this from your GA4 account)</li>
+            <li><strong>Set a trigger</strong> that fires on All Pages — so GA4 loads on every page</li>
+            <li><strong>Publish the GTM container</strong> — your changes go live</li>
+            <li><strong>From now on</strong>, every page view is recorded in GA4 via GTM</li>
+          </ol>
+
+          <p>
+            Then, when you want to track something new — like when someone clicks the "Contact Us" button:
+          </p>
+
+          <ol>
+            <li>Back in GTM, create a new GA4 Event tag (e.g. "contact_cta_click")</li>
+            <li>Create a trigger: "Click — just links — where click text contains 'Contact Us'"</li>
+            <li>Publish the container</li>
+            <li>GA4 now shows you every time someone clicks that button, under Events</li>
+          </ol>
+
+          <p>
+            The key point: you did all of that without touching your website's code. GTM handled the
+            implementation. GA4 stored and reported the data.
+          </p>
+
+          <h2>Do You Need GTM to Use GA4?</h2>
+
+          <p>
+            No — you can add the GA4 tracking code directly to your website's HTML without using GTM at all.
+            But you lose the main benefits:
+          </p>
+
+          <ul>
+            <li>Every new tracking change requires editing code</li>
+            <li>You can't easily add other tools (Meta Pixel, LinkedIn Insight Tag, etc.) without code changes</li>
+            <li>Marketers can't make tracking changes without developer help</li>
+          </ul>
+
+          <p>
+            The recommended approach — especially if you want to track custom events and use multiple
+            marketing tools — is to install GTM once, then deploy everything (including GA4) through GTM.
+          </p>
+
+          <h2>Do You Need GA4 to Use GTM?</h2>
+
+          <p>
+            No — GTM can deploy any tag, not just GA4. You could use GTM to deploy a Meta Pixel,
+            a Hotjar tracking script, a LinkedIn Insight Tag, or custom JavaScript. GTM is tool-agnostic.
+          </p>
+
+          <p>
+            But in practice, GA4 and GTM are almost always used together.
+          </p>
+
+          <h2>Quick Reference</h2>
+
+          <div class="callout">
+            <strong>Google Analytics 4 (GA4):</strong>
+            <ul style="margin-top: 0.5rem; margin-bottom: 0; padding-left: 1.25rem; list-style: disc;">
+              <li>Stores and analyses your website data</li>
+              <li>Shows reports: traffic, users, events, conversions</li>
+              <li>The "where" — the destination for your data</li>
+              <li>URL: analytics.google.com</li>
+            </ul>
+          </div>
+
+          <div class="callout">
+            <strong>Google Tag Manager (GTM):</strong>
+            <ul style="margin-top: 0.5rem; margin-bottom: 0; padding-left: 1.25rem; list-style: disc;">
+              <li>Deploys tracking scripts to your website</li>
+              <li>Controls what fires and when (tags, triggers, variables)</li>
+              <li>The "how" — the implementation tool</li>
+              <li>URL: tagmanager.google.com</li>
+            </ul>
+          </div>
+
+          <p>
+            For a deeper dive into how GTM works, read
+            <a href="what-is-google-tag-manager.html">What Is Google Tag Manager and Why Does It Matter?</a>
+            And to understand what conversions actually are and how to measure them properly in GA4, see
+            <a href="how-to-measure-conversions.html">How to Measure Whether a Website Is Actually Converting</a>.
+          </p>
+
+          <div class="post-share">
+            <p class="post-share__title">Found this useful? Share it:</p>
+            <div class="post-share__links">
+              <a href="https://twitter.com/intent/tweet?text=Google+Analytics+vs+Google+Tag+Manager%3A+What%27s+the+Difference%3F&url=https://[YOUR-DOMAIN]/blog/google-analytics-vs-google-tag-manager.html" class="post-share__link" target="_blank" rel="noopener noreferrer">Share on 𝕏</a>
+              <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://[YOUR-DOMAIN]/blog/google-analytics-vs-google-tag-manager.html" class="post-share__link" target="_blank" rel="noopener noreferrer">Share on LinkedIn</a>
+            </div>
+          </div>
+
+        </article>
+      </div>
+    </div>
+
+    <section class="related-posts" aria-labelledby="related-heading">
+      <div class="container">
+        <h2 class="related-posts__title" id="related-heading">Related Articles</h2>
+        <div class="blog-cards">
+          <article class="blog-card">
+            <div class="blog-card__image" role="img" aria-label="GTM">🏷️</div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta"><span class="blog-card__category">Analytics</span><time class="blog-card__date" datetime="2026-07-28">28 Jul 2026</time></div>
+              <h3 class="blog-card__title"><a href="what-is-google-tag-manager.html">What Is Google Tag Manager and Why Does It Matter?</a></h3>
+              <p class="blog-card__excerpt">GTM lets marketers add tracking without touching code. Here's how it works.</p>
+              <div class="blog-card__footer"><span>7 min read</span><a href="what-is-google-tag-manager.html" class="blog-card__read-more">Read →</a></div>
+            </div>
+          </article>
+          <article class="blog-card">
+            <div class="blog-card__image" role="img" aria-label="Conversions">🎯</div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta"><span class="blog-card__category">CRO</span><time class="blog-card__date" datetime="2026-08-19">19 Aug 2026</time></div>
+              <h3 class="blog-card__title"><a href="how-to-measure-conversions.html">How to Measure Whether a Website Is Actually Converting</a></h3>
+              <p class="blog-card__excerpt">Most websites can't tell if their traffic is working. Here's how to measure it.</p>
+              <div class="blog-card__footer"><span>7 min read</span><a href="how-to-measure-conversions.html" class="blog-card__read-more">Read →</a></div>
+            </div>
+          </article>
+          <article class="blog-card">
+            <div class="blog-card__image" role="img" aria-label="SEO">🔍</div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta"><span class="blog-card__category">SEO</span><time class="blog-card__date" datetime="2026-08-05">5 Aug 2026</time></div>
+              <h3 class="blog-card__title"><a href="seo-for-beginners.html">SEO for Beginners: How Search Engines Actually Work</a></h3>
+              <p class="blog-card__excerpt">Crawling, indexing, ranking — the explanation most SEO guides skip.</p>
+              <div class="blog-card__footer"><span>8 min read</span><a href="seo-for-beginners.html" class="blog-card__read-more">Read →</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand"><a href="../index.html" class="footer__logo">Amit<span class="footer__logo-dot">.</span>Rawat</a><p class="footer__tagline">Learning digital marketing in public — one article at a time.</p><div class="footer__social"><a href="https://linkedin.com/in/[YOUR-LINKEDIN]" class="footer__social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">in</a><a href="https://twitter.com/[YOUR-TWITTER]" class="footer__social-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">𝕏</a></div></div>
+        <div><h3 class="footer__col-title">Pages</h3><ul class="footer__links" role="list"><li><a href="../index.html" class="footer__link">Home</a></li><li><a href="../about.html" class="footer__link">About</a></li><li><a href="../digital-marketing.html" class="footer__link">Digital Marketing</a></li><li><a href="../blog.html" class="footer__link">Blog</a></li><li><a href="../contact.html" class="footer__link">Contact</a></li></ul></div>
+        <div><h3 class="footer__col-title">Articles</h3><ul class="footer__links" role="list"><li><a href="what-is-google-tag-manager.html" class="footer__link">What Is GTM?</a></li><li><a href="seo-for-beginners.html" class="footer__link">SEO for Beginners</a></li><li><a href="google-analytics-vs-google-tag-manager.html" class="footer__link">GA4 vs GTM</a></li><li><a href="how-to-measure-conversions.html" class="footer__link">Measuring Conversions</a></li><li><a href="my-digital-marketing-journey.html" class="footer__link">My Journey</a></li></ul></div>
+        <div><h3 class="footer__col-title">Topics</h3><ul class="footer__links" role="list"><li><a href="../digital-marketing.html#analytics" class="footer__link">Google Analytics</a></li><li><a href="../digital-marketing.html#gtm" class="footer__link">Google Tag Manager</a></li><li><a href="../digital-marketing.html#seo" class="footer__link">SEO</a></li></ul></div>
+      </div>
+      <div class="footer__bottom"><span>© 2026 Amit Rawat. Built to learn digital marketing.</span><span>Made with HTML, CSS &amp; JavaScript</span></div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

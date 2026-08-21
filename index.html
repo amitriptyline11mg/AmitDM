@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================================
+       PAGE TITLE & META DESCRIPTION
+       Edit these for every page — they appear in Google results.
+       Keep title under 60 characters, description under 160.
+       ============================================================ -->
+  <title>Amit Rawat | Digital Marketing Learning Journal</title>
+  <meta name="description" content="Follow Amit Rawat's journey learning digital marketing — exploring SEO, Google Analytics, Google Tag Manager, content marketing, and conversion tracking in practice.">
+
+  <!-- Canonical URL: tells Google this is the definitive version of this page -->
+  <!-- REPLACE [YOUR-DOMAIN] with your real domain once deployed -->
+  <link rel="canonical" href="https://[YOUR-DOMAIN]/">
+
+  <!-- ============================================================
+       OPEN GRAPH (Controls how this page looks when shared on
+       LinkedIn, Facebook, WhatsApp, Slack, etc.)
+       ============================================================ -->
+  <meta property="og:title" content="Amit Rawat | Digital Marketing Learning Journal">
+  <meta property="og:description" content="Exploring SEO, Google Analytics, GTM, content marketing and more. A practical digital marketing learning journal.">
+  <meta property="og:url" content="https://[YOUR-DOMAIN]/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://[YOUR-DOMAIN]/images/og-home.jpg">
+  <meta property="og:site_name" content="Amit Rawat — Digital Marketing">
+
+  <!-- ============================================================
+       TWITTER / X CARD (Controls how this looks on Twitter)
+       ============================================================ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Amit Rawat | Digital Marketing Learning Journal">
+  <meta name="twitter:description" content="Exploring SEO, Google Analytics, GTM, content marketing and more.">
+  <meta name="twitter:image" content="https://[YOUR-DOMAIN]/images/og-home.jpg">
+  <meta name="twitter:site" content="@[YOUR-TWITTER]">
+
+  <!-- ============================================================
+       GOOGLE TAG MANAGER — HEAD SNIPPET
+       HOW TO INSTALL:
+       1. Go to tagmanager.google.com and sign in
+       2. Create an account and container (choose "Web")
+       3. You'll get a Container ID like: GTM-XXXXXXX
+       4. Replace GTM-XXXXXXX in BOTH snippets on this page
+       5. Remove the ! and -- !> comment markers to activate
+       6. Do the same for every other HTML page on the site
+       See DIGITAL_MARKETING_SETUP.md for full step-by-step guide
+       ============================================================ -->
+  <!--
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  -->
+
+  <!-- Google Fonts: Inter (loads from Google's servers, free) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured data: tells Google who this website belongs to -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Amit Rawat",
+    "url": "https://[YOUR-DOMAIN]/",
+    "description": "Digital marketing learner exploring SEO, analytics, content marketing and more.",
+    "jobTitle": "Digital Marketing Learner",
+    "knowsAbout": ["SEO", "Google Analytics", "Google Tag Manager", "Content Marketing", "Digital Marketing", "Conversion Rate Optimization"],
+    "sameAs": [
+      "https://linkedin.com/in/[YOUR-LINKEDIN]",
+      "https://twitter.com/[YOUR-TWITTER]"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ============================================================
+       GOOGLE TAG MANAGER — BODY SNIPPET
+       Place this immediately after the <body> tag above.
+       Replace GTM-XXXXXXX with your real Container ID.
+       ============================================================ -->
+  <!--
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  -->
+
+  <!-- Skip to main content: helps keyboard users and screen readers -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ============================================================
+       NAVIGATION
+       To change your name in the logo: edit "Amit<span>.</span>Rawat" below
+       To add/remove links: edit the <li> items
+       ============================================================ -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Amit Rawat — Home">
+        Amit<span class="nav__logo-dot">.</span>Rawat
+      </a>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="digital-marketing.html" class="nav__link">Digital Marketing</a></li>
+        <li><a href="blog.html" class="nav__link">Blog</a></li>
+        <li><a href="contact.html" class="nav__link nav__link--cta">Get in Touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- ============================================================
+         HERO SECTION
+         Edit the headline, subheadline, and CTA text below.
+         ============================================================ -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero__inner">
+          <span class="hero__eyebrow">📚 Digital Marketing Learning Journal</span>
+          <h1 class="hero__title" id="hero-heading">
+            Learning Digital Marketing<br>
+            <span class="accent">One Strategy at a Time</span>
+          </h1>
+          <p class="hero__description">
+            I'm Amit — exploring SEO, Google Analytics, content marketing, and conversion
+            tracking in practice. This site is my living experiment: built to learn, optimised
+            to improve, documented to share.
+          </p>
+          <div class="hero__actions">
+            <a href="blog.html" class="btn btn--primary btn--lg">Read the Blog</a>
+            <a href="about.html" class="btn btn--outline-white btn--lg">About Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         INTRO / WHAT I DO
+         ============================================================ -->
+    <section class="section section--alt" aria-labelledby="intro-heading">
+      <div class="container container--narrow">
+        <div class="section__header">
+          <span class="section__eyebrow">What this is</span>
+          <h2 class="section__title" id="intro-heading">A Real Practice Environment for Digital Marketing</h2>
+          <p class="section__description">
+            This site isn't a portfolio pretending to be something it's not. It's an honest
+            practice ground — every page is designed to apply real digital marketing principles
+            so I can learn by doing, not just reading.
+          </p>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+          <div class="card">
+            <div class="card__icon">🔍</div>
+            <h3 class="card__title">SEO in Practice</h3>
+            <p class="card__description">Every page follows real SEO best practices — semantic HTML, proper headings, meta tags, and internal linking — so I can see what actually works.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon">📊</div>
+            <h3 class="card__title">Analytics Ready</h3>
+            <p class="card__description">This site is wired for Google Analytics 4 via Google Tag Manager. I track page views, CTAs, form interactions, and scroll depth as learning exercises.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon">✍️</div>
+            <h3 class="card__title">Content Marketing</h3>
+            <p class="card__description">The blog covers topics I'm genuinely learning about — written to be useful, structured for search, and linked intentionally.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SKILLS / LEARNING AREAS
+         Edit the skills, descriptions, and status labels below.
+         ============================================================ -->
+    <section class="section" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">What I'm Learning</span>
+          <h2 class="section__title" id="skills-heading">Areas of Focus</h2>
+          <p class="section__description">
+            Digital marketing is broad. Here's where I'm currently investing my learning time.
+          </p>
+        </div>
+        <div class="dm-grid">
+          <div class="dm-card">
+            <div class="dm-card__icon">🔎</div>
+            <h3 class="dm-card__title">Search Engine Optimisation</h3>
+            <p class="dm-card__description">Learning how search engines crawl, index, and rank pages. Practising on-page SEO, technical SEO, and internal linking on this site.</p>
+            <div class="dm-card__topics">
+              <span class="dm-card__topic">On-page SEO</span>
+              <span class="dm-card__topic">Technical SEO</span>
+              <span class="dm-card__topic">Keywords</span>
+              <span class="dm-card__topic">Search Console</span>
+            </div>
+          </div>
+          <div class="dm-card">
+            <div class="dm-card__icon">📈</div>
+            <h3 class="dm-card__title">Google Analytics 4</h3>
+            <p class="dm-card__description">Understanding how to measure website performance, read reports, interpret user behaviour data, and set up conversion goals.</p>
+            <div class="dm-card__topics">
+              <span class="dm-card__topic">Events</span>
+              <span class="dm-card__topic">Conversions</span>
+              <span class="dm-card__topic">Audiences</span>
+              <span class="dm-card__topic">Reports</span>
+            </div>
+          </div>
+          <div class="dm-card">
+            <div class="dm-card__icon">🏷️</div>
+            <h3 class="dm-card__title">Google Tag Manager</h3>
+            <p class="dm-card__description">Learning to deploy tracking without touching code — implementing tags, triggers, variables, and custom events through the GTM interface.</p>
+            <div class="dm-card__topics">
+              <span class="dm-card__topic">Tags</span>
+              <span class="dm-card__topic">Triggers</span>
+              <span class="dm-card__topic">Variables</span>
+              <span class="dm-card__topic">Preview Mode</span>
+            </div>
+          </div>
+          <div class="dm-card">
+            <div class="dm-card__icon">✍️</div>
+            <h3 class="dm-card__title">Content Marketing</h3>
+            <p class="dm-card__description">Writing blog posts that are useful, structured for readers and search engines, properly tagged, and internally linked.</p>
+            <div class="dm-card__topics">
+              <span class="dm-card__topic">Blogging</span>
+              <span class="dm-card__topic">Content Strategy</span>
+              <span class="dm-card__topic">Headline Writing</span>
+            </div>
+          </div>
+          <div class="dm-card">
+            <div class="dm-card__icon">🎯</div>
+            <h3 class="dm-card__title">Conversion Rate Optimisation</h3>
+            <p class="dm-card__description">Designing landing pages and CTAs with conversion principles in mind. Studying how small changes in copy and design affect user behaviour.</p>
+            <div class="dm-card__topics">
+              <span class="dm-card__topic">CTA Design</span>
+              <span class="dm-card__topic">Landing Pages</span>
+              <span class="dm-card__topic">A/B Testing</span>
+            </div>
+          </div>
+          <div class="dm-card">
+            <div class="dm-card__icon">💰</div>
+            <h3 class="dm-card__title">Paid Search (Coming Soon)</h3>
+            <p class="dm-card__description">Planning to explore Google Ads and Meta Ads — campaign structure, keyword bidding, ad copy, and tracking conversions from paid traffic.</p>
+            <div class="dm-card__topics">
+              <span class="dm-card__topic">Google Ads</span>
+              <span class="dm-card__topic">Meta Ads</span>
+              <span class="dm-card__topic">Bidding</span>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-8">
+          <a href="digital-marketing.html" class="btn btn--secondary">See All Learning Areas →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FEATURED BLOG POSTS
+         ============================================================ -->
+    <section class="section section--alt" aria-labelledby="blog-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">From the Blog</span>
+          <h2 class="section__title" id="blog-heading">Latest Articles</h2>
+          <p class="section__description">
+            Practical articles about digital marketing — written as I learn, structured to be genuinely useful.
+          </p>
+        </div>
+        <div class="blog-cards">
+          <article class="blog-card" data-category="analytics">
+            <div class="blog-card__image" role="img" aria-label="Google Tag Manager article">🏷️</div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta">
+                <span class="blog-card__category">Analytics</span>
+                <time class="blog-card__date" datetime="2026-07-28">28 Jul 2026</time>
+              </div>
+              <h3 class="blog-card__title">
+                <a href="blog/what-is-google-tag-manager.html">What Is Google Tag Manager and Why Does It Matter?</a>
+              </h3>
+              <p class="blog-card__excerpt">GTM lets marketers add tracking to a website without touching the code. Here's a clear explanation of what it is, how it works, and why it changes everything.</p>
+              <div class="blog-card__footer">
+                <span>7 min read</span>
+                <a href="blog/what-is-google-tag-manager.html" class="blog-card__read-more">Read article →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="seo">
+            <div class="blog-card__image" role="img" aria-label="SEO article">🔍</div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta">
+                <span class="blog-card__category">SEO</span>
+                <time class="blog-card__date" datetime="2026-08-05">5 Aug 2026</time>
+              </div>
+              <h3 class="blog-card__title">
+                <a href="blog/seo-for-beginners.html">SEO for Beginners: How Search Engines Actually Work</a>
+              </h3>
+              <p class="blog-card__excerpt">Before you can do SEO, you need to understand what search engines are actually doing. This is the explanation most beginner guides skip.</p>
+              <div class="blog-card__footer">
+                <span>8 min read</span>
+                <a href="blog/seo-for-beginners.html" class="blog-card__read-more">Read article →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="analytics">
+            <div class="blog-card__image" role="img" aria-label="GA4 vs GTM article">📊</div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta">
+                <span class="blog-card__category">Analytics</span>
+                <time class="blog-card__date" datetime="2026-08-12">12 Aug 2026</time>
+              </div>
+              <h3 class="blog-card__title">
+                <a href="blog/google-analytics-vs-google-tag-manager.html">Google Analytics vs Google Tag Manager: What's the Difference?</a>
+              </h3>
+              <p class="blog-card__excerpt">These two tools are constantly confused. One measures your data; the other deploys it. Here's the clear explanation every marketer needs.</p>
+              <div class="blog-card__footer">
+                <span>6 min read</span>
+                <a href="blog/google-analytics-vs-google-tag-manager.html" class="blog-card__read-more">Read article →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="text-center mt-8">
+          <a href="blog.html" class="btn btn--primary">View All Articles</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         NEWSLETTER SIGNUP
+         This is a demo form — no emails are stored.
+         To connect a real email tool: see DIGITAL_MARKETING_SETUP.md
+         ============================================================ -->
+    <section class="newsletter" aria-labelledby="newsletter-heading">
+      <div class="container">
+        <div class="newsletter__inner">
+          <h2 class="newsletter__title" id="newsletter-heading">Stay in the Loop</h2>
+          <p class="newsletter__description">
+            New articles on SEO, analytics, and digital marketing — no fluff, no spam.
+          </p>
+          <form class="newsletter__form" data-demo="true" aria-label="Newsletter signup">
+            <label for="newsletter-email" class="sr-only">Your email address</label>
+            <input
+              type="email"
+              id="newsletter-email"
+              name="email"
+              class="newsletter__input"
+              placeholder="your@email.com"
+              required
+              aria-required="true">
+            <button type="submit" class="btn btn--white">Subscribe</button>
+          </form>
+          <p class="newsletter__notice">No spam. Unsubscribe at any time.</p>
+          <span class="newsletter__demo-note">⚠️ Demo form — not connected to an email platform yet</span>
+          <div class="form-success" role="alert">
+            ✅ Thanks! I'll be in touch when I connect this to a real email platform.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT CTA
+         ============================================================ -->
+    <section class="cta-section" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 class="cta-section__title" id="cta-heading">Let's Connect</h2>
+        <p class="cta-section__description">
+          Learning digital marketing and want to compare notes? Have feedback on something I've written?
+          I'd love to hear from you.
+        </p>
+        <a href="contact.html" class="btn btn--white btn--lg">Get in Touch</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       Edit: your name, tagline, social links, copyright year
+       ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">Amit<span class="footer__logo-dot">.</span>Rawat</a>
+          <p class="footer__tagline">
+            Learning digital marketing in public — exploring SEO, analytics, and content strategy one article at a time.
+          </p>
+          <div class="footer__social">
+            <!-- Replace # with your real profile URLs -->
+            <a href="https://linkedin.com/in/[YOUR-LINKEDIN]" class="footer__social-link" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank">in</a>
+            <a href="https://twitter.com/[YOUR-TWITTER]" class="footer__social-link" aria-label="Twitter / X" rel="noopener noreferrer" target="_blank">𝕏</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Pages</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="about.html" class="footer__link">About</a></li>
+            <li><a href="digital-marketing.html" class="footer__link">Digital Marketing</a></li>
+            <li><a href="blog.html" class="footer__link">Blog</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Blog</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="blog/what-is-google-tag-manager.html" class="footer__link">What Is GTM?</a></li>
+            <li><a href="blog/seo-for-beginners.html" class="footer__link">SEO for Beginners</a></li>
+            <li><a href="blog/google-analytics-vs-google-tag-manager.html" class="footer__link">GA4 vs GTM</a></li>
+            <li><a href="blog/how-to-measure-conversions.html" class="footer__link">Measuring Conversions</a></li>
+            <li><a href="blog/my-digital-marketing-journey.html" class="footer__link">My Learning Journey</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Learn</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="digital-marketing.html#seo" class="footer__link">SEO</a></li>
+            <li><a href="digital-marketing.html#analytics" class="footer__link">Google Analytics</a></li>
+            <li><a href="digital-marketing.html#gtm" class="footer__link">Google Tag Manager</a></li>
+            <li><a href="digital-marketing.html#cro" class="footer__link">CRO</a></li>
+            <li><a href="contact.html" class="footer__link">Get in Touch</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Amit Rawat. Built to learn digital marketing.</span>
+        <span>Made with HTML, CSS &amp; JavaScript</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

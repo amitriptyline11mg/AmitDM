@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Measure Whether a Website Is Actually Converting | Amit Rawat</title>
+  <meta name="description" content="Most websites have traffic but can't tell if it's working. Learn what conversion tracking is, how to define your conversions, set them up in GA4, and use the data to improve.">
+  <link rel="canonical" href="https://[YOUR-DOMAIN]/blog/how-to-measure-conversions.html">
+
+  <meta property="og:title" content="How to Measure Whether a Website Is Actually Converting">
+  <meta property="og:description" content="Most websites have traffic but can't tell if it's working. Here's how to measure conversions properly.">
+  <meta property="og:url" content="https://[YOUR-DOMAIN]/blog/how-to-measure-conversions.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://[YOUR-DOMAIN]/images/og-conversions.jpg">
+  <meta property="article:published_time" content="2026-08-19">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Measure Whether a Website Is Actually Converting">
+  <meta name="twitter:description" content="Most websites can't tell if traffic is working. Here's how to measure conversions properly.">
+
+  <!-- GTM HEAD SNIPPET -->
+  <!--
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "How to Measure Whether a Website Is Actually Converting",
+    "description": "Most websites have traffic but can't tell if it's working. Learn what conversion tracking is and how to set it up.",
+    "datePublished": "2026-08-19",
+    "dateModified": "2026-08-19",
+    "author": { "@type": "Person", "name": "Amit Rawat", "url": "https://[YOUR-DOMAIN]/about.html" },
+    "publisher": { "@type": "Person", "name": "Amit Rawat" },
+    "url": "https://[YOUR-DOMAIN]/blog/how-to-measure-conversions.html",
+    "keywords": ["Conversion Tracking", "CRO", "Google Analytics", "Website Conversions", "Digital Marketing"]
+  }
+  </script>
+</head>
+<body>
+
+  <!--
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  -->
+
+  <div class="reading-progress" role="progressbar" aria-label="Reading progress" aria-valuemin="0" aria-valuemax="100"></div>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo" aria-label="Amit Rawat — Home">Amit<span class="nav__logo-dot">.</span>Rawat</a>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <ul class="nav__links" role="list">
+        <li><a href="../index.html" class="nav__link">Home</a></li>
+        <li><a href="../about.html" class="nav__link">About</a></li>
+        <li><a href="../digital-marketing.html" class="nav__link">Digital Marketing</a></li>
+        <li><a href="../blog.html" class="nav__link">Blog</a></li>
+        <li><a href="../contact.html" class="nav__link nav__link--cta">Get in Touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <header class="post-header">
+      <div class="container container--blog">
+        <div class="post-header__inner">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <span class="breadcrumb__sep" aria-hidden="true">/</span>
+            <a href="../blog.html">Blog</a>
+            <span class="breadcrumb__sep" aria-hidden="true">/</span>
+            <span aria-current="page">Measuring Conversions</span>
+          </nav>
+          <span class="post-header__category">Conversion Rate Optimisation</span>
+          <h1 class="post-header__title">How to Measure Whether a Website Is Actually Converting</h1>
+          <div class="post-header__meta">
+            <span>By <a href="../about.html" style="color: inherit;">Amit Rawat</a></span>
+            <span>·</span>
+            <time datetime="2026-08-19">19 August 2026</time>
+            <span>·</span>
+            <span data-reading-time>7 min read</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="post-body">
+      <div class="container container--blog">
+        <article class="post-content">
+
+          <p>
+            Most websites that have a Google Analytics account are measuring the wrong things. They know
+            how many people visited, which pages were popular, and where traffic came from. But they don't
+            know whether any of that traffic actually <em>did</em> anything useful.
+          </p>
+
+          <p>
+            This article is about conversion tracking — what it is, why it matters, and how to set it up
+            properly so your analytics actually tell you whether your website is working.
+          </p>
+
+          <h2>What Is a Conversion?</h2>
+
+          <p>
+            A conversion is any action a user takes that moves them closer to your goal.
+          </p>
+
+          <p>
+            That's deliberately broad — because conversions look different for every website. Here are examples:
+          </p>
+
+          <ul>
+            <li>A contact form submission</li>
+            <li>A newsletter signup</li>
+            <li>A phone number click</li>
+            <li>A product purchase</li>
+            <li>A PDF download</li>
+            <li>A click on a key CTA button</li>
+            <li>Watching a video past a certain point</li>
+            <li>Scrolling to the bottom of a pricing page</li>
+          </ul>
+
+          <p>
+            Not all conversions are equal. Marketers usually distinguish between two types:
+          </p>
+
+          <h3>Macro Conversions</h3>
+          <p>
+            These are your primary goals — the actions you most want users to take. For a service website,
+            it might be a contact form submission or a phone call. For an ecommerce site, it's a purchase.
+            These directly indicate business value.
+          </p>
+
+          <h3>Micro Conversions</h3>
+          <p>
+            These are smaller steps that indicate engagement and intent, even if they don't directly generate
+            business value. Newsletter signup, clicking a CTA, downloading a brochure, or engaging with content.
+            Micro conversions tell you users are interested, even if they haven't converted yet.
+          </p>
+
+          <p>
+            Tracking both types gives you a much richer picture of how your site is performing.
+          </p>
+
+          <h2>Why Traffic Alone Tells You Almost Nothing</h2>
+
+          <p>
+            Imagine you're running a coffee shop. You notice 500 people walked past the window today.
+            Is that good? It depends — did any of them come inside? Did any buy coffee?
+          </p>
+
+          <p>
+            Page views are like foot traffic past the window. They tell you potential is there, but nothing
+            about whether your website is actually <em>converting</em> that potential into something valuable.
+          </p>
+
+          <p>
+            A website with 10,000 monthly visitors and zero conversions is not performing better than one
+            with 500 visitors and 50 conversions. The second one has a 10% conversion rate. The first one
+            has 0%.
+          </p>
+
+          <p>
+            Conversion tracking is how you move from measuring activity to measuring outcomes.
+          </p>
+
+          <h2>How to Define Your Conversions</h2>
+
+          <p>
+            Before you set up any tracking, you need to decide what you're measuring. The question to ask:
+            <em>What action, if taken, would tell me that a visitor got value from this website or is
+            interested in doing business?</em>
+          </p>
+
+          <p>For a personal digital marketing learning site like this one, sensible conversions include:</p>
+
+          <ul>
+            <li>Contact form submission (high intent)</li>
+            <li>Newsletter signup (interest in following along)</li>
+            <li>CTA click on "Get in Touch" button (engagement)</li>
+            <li>Email address click (very high intent — opening their email client)</li>
+            <li>LinkedIn profile click (social connection)</li>
+            <li>Blog post read to 90% scroll depth (genuine engagement with content)</li>
+          </ul>
+
+          <p>
+            For different website types, the list changes — but the principle is the same: define actions
+            that have real meaning, not just vanity actions that look good in a report.
+          </p>
+
+          <h2>How to Set Up Conversion Tracking in GA4</h2>
+
+          <p>
+            In GA4, conversions are built on top of events. An event is any recorded user interaction.
+            A conversion is an event you've told GA4 to treat as significant.
+          </p>
+
+          <h3>Option 1: Using Google Tag Manager (Recommended)</h3>
+
+          <p>
+            This is the proper way to implement custom conversion tracking. The process:
+          </p>
+
+          <ol>
+            <li>Install GTM on your website (see <a href="what-is-google-tag-manager.html">What Is Google Tag Manager?</a>)</li>
+            <li>In GTM, create a GA4 Event tag for the action you want to track</li>
+            <li>Name the event descriptively (e.g. <code>contact_form_submit</code>, <code>newsletter_signup</code>)</li>
+            <li>Set the trigger (e.g. "Form Submission" trigger, or "Click" trigger on a specific button)</li>
+            <li>Publish the GTM container</li>
+            <li>In GA4, go to Configure → Events → find your event → toggle "Mark as conversion"</li>
+          </ol>
+
+          <p>
+            From that point on, every time that event fires, GA4 records a conversion. You can see
+            conversion rates, conversion paths, and compare traffic sources by their conversion rate.
+          </p>
+
+          <h3>Option 2: GA4 Enhanced Measurement (Simpler, Less Precise)</h3>
+
+          <p>
+            GA4 has built-in "Enhanced Measurement" that automatically tracks some events without any
+            setup: page views, scrolls (90% depth), outbound clicks, site search, video engagement,
+            and file downloads.
+          </p>
+
+          <p>
+            You can then mark any of these auto-tracked events as conversions. It's faster to set up
+            but gives you less control over exactly what gets tracked.
+          </p>
+
+          <h2>Reading Your Conversion Data</h2>
+
+          <p>
+            Once you have conversions set up, the key metrics to understand:
+          </p>
+
+          <ul>
+            <li><strong>Conversion Rate</strong> — percentage of sessions that included a conversion. A 2–5% conversion rate is considered good for most websites.</li>
+            <li><strong>Conversions by Traffic Source</strong> — which channel (organic search, social, direct) drives the most conversions? This tells you where to invest.</li>
+            <li><strong>Top Conversion Paths</strong> — what pages did people visit before converting? This shows you your highest-value content.</li>
+            <li><strong>Conversion by Device</strong> — are mobile users converting at the same rate as desktop? If not, your mobile experience might need work.</li>
+          </ul>
+
+          <h2>Conversion Rate Optimisation (CRO): Improving What You Measure</h2>
+
+          <p>
+            Once you're measuring conversions, you can start improving them — this is CRO.
+          </p>
+
+          <p>
+            CRO is the process of increasing the percentage of visitors who complete a desired action.
+            It's not about getting more traffic. It's about getting more value from the traffic you already have.
+          </p>
+
+          <p>Some practical CRO principles:</p>
+
+          <ul>
+            <li><strong>Clear CTAs</strong> — your call-to-action should be obvious, specific, and tell people exactly what will happen when they click</li>
+            <li><strong>Reduce friction</strong> — every extra field in a form, every extra click, every confusing piece of copy reduces conversions</li>
+            <li><strong>Match message to intent</strong> — someone from a Google search result expects to find what they searched for. Don't make them hunt for it.</li>
+            <li><strong>Social proof</strong> — testimonials, reviews, case studies, even just displaying that others have subscribed reduces anxiety</li>
+            <li><strong>Speed</strong> — slow pages kill conversions. A 1-second delay in page load can reduce conversions by 7%.</li>
+          </ul>
+
+          <h2>Planned Conversion Events for This Site</h2>
+
+          <p>
+            Once GTM is installed on this site, these are the conversion events I plan to track:
+          </p>
+
+          <div class="callout">
+            <strong>📊 Conversion events planned for this site:</strong>
+            <ul style="margin-top: 0.5rem; margin-bottom: 0; padding-left: 1.25rem; list-style: disc;">
+              <li><code>contact_form_submit</code> — when the contact form is submitted</li>
+              <li><code>newsletter_signup</code> — when the newsletter form is submitted</li>
+              <li><code>cta_click_get_in_touch</code> — clicks on the primary nav CTA</li>
+              <li><code>email_click</code> — clicks on the email address link</li>
+              <li><code>linkedin_click</code> — clicks through to LinkedIn profile</li>
+              <li><code>blog_scroll_90</code> — scrolling 90% through a blog post (engagement indicator)</li>
+            </ul>
+          </div>
+
+          <p>
+            These are documented here as a learning exercise. Defining conversion events before implementing
+            them is an important step — it forces clarity about what success actually looks like.
+          </p>
+
+          <h2>Key Takeaways</h2>
+
+          <ul>
+            <li>A conversion is any action a user takes that moves them toward your goal</li>
+            <li>Macro conversions are primary goals (form submission, purchase); micro conversions are smaller signals of engagement</li>
+            <li>Traffic without conversion tracking tells you activity, not outcomes</li>
+            <li>Define your conversions before implementing tracking — be clear about what success looks like</li>
+            <li>Set up conversion tracking via GA4 events, ideally deployed through GTM</li>
+            <li>CRO is the process of improving your conversion rate — it's how you get more value from existing traffic</li>
+          </ul>
+
+          <p>
+            Related: <a href="google-analytics-vs-google-tag-manager.html">Google Analytics vs Google Tag Manager</a> explains how GA4 and GTM work together — which is the foundation for implementing everything described in this article.
+          </p>
+
+          <div class="post-share">
+            <p class="post-share__title">Found this useful? Share it:</p>
+            <div class="post-share__links">
+              <a href="https://twitter.com/intent/tweet?text=How+to+Measure+Whether+a+Website+Is+Actually+Converting&url=https://[YOUR-DOMAIN]/blog/how-to-measure-conversions.html" class="post-share__link" target="_blank" rel="noopener noreferrer">Share on 𝕏</a>
+              <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://[YOUR-DOMAIN]/blog/how-to-measure-conversions.html" class="post-share__link" target="_blank" rel="noopener noreferrer">Share on LinkedIn</a>
+            </div>
+          </div>
+
+        </article>
+      </div>
+    </div>
+
+    <section class="related-posts" aria-labelledby="related-heading">
+      <div class="container">
+        <h2 class="related-posts__title" id="related-heading">Related Articles</h2>
+        <div class="blog-cards">
+          <article class="blog-card">
+            <div class="blog-card__image" role="img" aria-label="GTM">🏷️</div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta"><span class="blog-card__category">Analytics</span><time class="blog-card__date" datetime="2026-07-28">28 Jul 2026</time></div>
+              <h3 class="blog-card__title"><a href="what-is-google-tag-manager.html">What Is Google Tag Manager and Why Does It Matter?</a></h3>
+              <p class="blog-card__excerpt">GTM is how you implement conversion tracking without touching code.</p>
+              <div class="blog-card__footer"><span>7 min read</span><a href="what-is-google-tag-manager.html" class="blog-card__read-more">Read →</a></div>
+            </div>
+          </article>
+          <article class="blog-card">
+            <div class="blog-card__image" role="img" aria-label="GA4 vs GTM">📊</div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta"><span class="blog-card__category">Analytics</span><time class="blog-card__date" datetime="2026-08-12">12 Aug 2026</time></div>
+              <h3 class="blog-card__title"><a href="google-analytics-vs-google-tag-manager.html">Google Analytics vs Google Tag Manager: What's the Difference?</a></h3>
+              <p class="blog-card__excerpt">One measures. The other deploys. Here's the explanation every marketer needs.</p>
+              <div class="blog-card__footer"><span>6 min read</span><a href="google-analytics-vs-google-tag-manager.html" class="blog-card__read-more">Read →</a></div>
+            </div>
+          </article>
+          <article class="blog-card">
+            <div class="blog-card__image" role="img" aria-label="Learning journey">🚀</div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta"><span class="blog-card__category">Personal</span><time class="blog-card__date" datetime="2026-08-21">21 Aug 2026</time></div>
+              <h3 class="blog-card__title"><a href="my-digital-marketing-journey.html">My Digital Marketing Learning Journey</a></h3>
+              <p class="blog-card__excerpt">An honest account of learning digital marketing from scratch.</p>
+              <div class="blog-card__footer"><span>5 min read</span><a href="my-digital-marketing-journey.html" class="blog-card__read-more">Read →</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand"><a href="../index.html" class="footer__logo">Amit<span class="footer__logo-dot">.</span>Rawat</a><p class="footer__tagline">Learning digital marketing in public — one article at a time.</p><div class="footer__social"><a href="https://linkedin.com/in/[YOUR-LINKEDIN]" class="footer__social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">in</a><a href="https://twitter.com/[YOUR-TWITTER]" class="footer__social-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">𝕏</a></div></div>
+        <div><h3 class="footer__col-title">Pages</h3><ul class="footer__links" role="list"><li><a href="../index.html" class="footer__link">Home</a></li><li><a href="../about.html" class="footer__link">About</a></li><li><a href="../digital-marketing.html" class="footer__link">Digital Marketing</a></li><li><a href="../blog.html" class="footer__link">Blog</a></li><li><a href="../contact.html" class="footer__link">Contact</a></li></ul></div>
+        <div><h3 class="footer__col-title">Articles</h3><ul class="footer__links" role="list"><li><a href="what-is-google-tag-manager.html" class="footer__link">What Is GTM?</a></li><li><a href="seo-for-beginners.html" class="footer__link">SEO for Beginners</a></li><li><a href="google-analytics-vs-google-tag-manager.html" class="footer__link">GA4 vs GTM</a></li><li><a href="how-to-measure-conversions.html" class="footer__link">Measuring Conversions</a></li><li><a href="my-digital-marketing-journey.html" class="footer__link">My Journey</a></li></ul></div>
+        <div><h3 class="footer__col-title">Topics</h3><ul class="footer__links" role="list"><li><a href="../digital-marketing.html#cro" class="footer__link">CRO</a></li><li><a href="../digital-marketing.html#analytics" class="footer__link">Analytics</a></li><li><a href="../digital-marketing.html#gtm" class="footer__link">GTM</a></li></ul></div>
+      </div>
+      <div class="footer__bottom"><span>© 2026 Amit Rawat. Built to learn digital marketing.</span><span>Made with HTML, CSS &amp; JavaScript</span></div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
